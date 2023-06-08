@@ -13,3 +13,4 @@
     - pi-apps 설치
         - Visual Studio Code 설치
         - Github Desktop 설치 및 설정
+https://youneedawiki.com/app/page/1fytNmoSyN70Y9VnANEdWJ-19Kj-1E1gW3o0oF3nXCRs?p=1wsnKDXabPNexd77rGhjdBLAgdFtMhF5s
