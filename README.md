@@ -13,3 +13,13 @@
     - pi-apps 설치
         - Visual Studio Code 설치
         - Github Desktop 설치 및 설정
+        
+## 3일차
+- 라즈베리파이 학습
+    - 통신 설정
+        - AnyDesk 실패
+    - 리눅스 일반
+        - 서비스 실행, 확인, 종료
+            - systemctl [start|stop|status|restart] 서비스명
+        - MySQL DB
+    - Flask 기본 (웹서버)
