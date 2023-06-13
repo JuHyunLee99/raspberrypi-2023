@@ -37,7 +37,6 @@ try:
 except KeyboardInterrupt:
     GPIO.output(green, True)   
     GPIO.output(blue, True)
-    GPIO.output(red, True)
 
     GPIO.cleanup()
 

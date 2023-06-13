@@ -23,3 +23,6 @@
             - systemctl [start|stop|status|restart] 서비스명
         - MySQL DB
     - Flask 기본 (웹서버)
+
+## 4일차
+-  라즈베리파이
