@@ -14,7 +14,7 @@ for i in range(0, 3):
         time.sleep(0.02)
 
     for low in range(124, 30, -1):
-        pwm.ChangeDutyCycle(low/10.0)   # 12.4~29
+        pwm.ChangeDutyCycle(low/10.0)   # 12.4~2.9
         time.sleep(0.02)
 
 pwm.ChangeDutyCycle(0)

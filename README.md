@@ -25,4 +25,26 @@
     - Flask 기본 (웹서버)
 
 ## 4일차
--  라즈베리파이
+-  라즈베리파이 학습
+    - PyQt5 설치
+    - QtDesigner 설치 및 실행확인
+    - 하드웨어 제어 -GPIO
+        - LED/RGB LED 출렦
+
+## 5일차
+- 라즈베리파이 학습
+
+## 6일차
+- 라즈베리파이 학습
+    - MQTT 통신
+        - MQTT Broker IP, port설정, 계정설정(옵션)
+        - RPI <--> WPF
+        - RPI 온습도 센터값 MQTT 전송
+        - WPF 모터, LED제어값 전송
+        - RPi Python paho-mqtt 패키지
+        - WPF C# M2Mqtt패키지
+
+WPF 모니터링, 컨트롤 화면
+
+라즈베리파이 테스트 결과
+
