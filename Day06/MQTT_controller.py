@@ -8,7 +8,7 @@ import json # 파이썬에서는 기본 제공 c#에서는 Newthon soft
 import datetime as dt
 
 import paho.mqtt.client as mqtt
-import Adafruit_DHT as dht
+import Adafruit_DHT as dht  # (온습도) 센서 패키지
 
 sensor = dht.DHT11 # 초 저가 센서
 rcv_pin = 10
@@ -17,7 +17,7 @@ rcv_pin = 10
 class publisher(Thread):
     def __init__(self):
         Thread.__init__(self) # Thread 초끼화
-        self.host = '210.119.12.55' # 본인pc ip
+        self.host = '210.119.12.61' # 본인pc ip
         self.port = 1883 # 회사에서는 이 포트 그대로 사용하면 안됨
         self.clientId = 'IOT55'
         self.count = 0
