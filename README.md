@@ -49,6 +49,6 @@
         - WPF C# M2Mqtt패키지
 
 WPF 모니터링, 컨트롤 화면
-
+<img src="https://github.com/JuHyunLee99/raspberrypi-2023/blob/main/images/monitoring1.PNG?raw=true" width="770">
 라즈베리파이 테스트 결과
 
