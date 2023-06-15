@@ -53,3 +53,7 @@ WPF 모니터링, 컨트롤 화면
 라즈베리파이 테스트 결과  
 <img src="https://github.com/JuHyunLee99/raspberrypi-2023/blob/main/images/monitoring2.jpg?raw=true" width="770" height="770">
 
+## 7일차
+- 라즈베리파이 학습
+    - 파이케메라 v1.3 ov
+    - 
