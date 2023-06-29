@@ -14,7 +14,7 @@ music = [130, 245]
 
 # 세팅, 초기화
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(swPin, GPIO.IN)
+GPIO.setup(swPin, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(ledPin, GPIO.OUT)
 GPIO.setup(buzzerPin, GPIO.OUT)
 buzz = GPIO.PWM(buzzerPin, 440) # 440Hz를 갖는 객체 생성

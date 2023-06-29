@@ -11,20 +11,17 @@ SEGTABLE = [0x3F, 0x06, 0x5B, 0x4F, 0x66,0x6D, 0x7D, 0x07,
 count = -1
 
 def clickHandler(channel):
-    global count, SEGTABLE    # 클릭 횟수, 표현 숫자
-    count = count + 1
+	global count, SEGTABLE    # 클릭 횟수, 표현 숫자
+	count = count + 1
+	mask = 0x01
+	print(count)
 
-    mask = 0x01
+	for pin in FND:
+		GPIO.output(pin, SEGTABLE[count] & mask)
+		mask <<= 1 
 
-    for pin in FND:
-        flage = SEGTABLE[count] & mask
-        print(flage & mask, end=' ')
-        GPIO.output(pin, SEGTABLE[count] & mask)
-        mask <<= 1 
-        
-    print()
-    if(count>=16):
-        count = -1
+		if(count>=16):
+			count = -1
 
 GPIO.setwarnings(False) # 쓸데없는 경고표시 로그 사라짐
 GPIO.setmode(GPIO.BCM)
@@ -34,7 +31,10 @@ for pin in FND:        # 7seg 출력핀 설정
     GPIO.output(pin, False) # 7seg 모든 핀 False
 GPIO.add_event_detect(BUTTON, GPIO.RISING, callback=clickHandler)
 
-while(1):
-    time.sleep(1)
+try:
+	while(1):
+		time.sleep(1)
+except KeyboardInterrupt:
+	GPIO.cleanup()
 
 
